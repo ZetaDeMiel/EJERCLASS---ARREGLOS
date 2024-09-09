@@ -1,0 +1,37 @@
+class Ventas:
+    def __init__(self):
+
+        self.ventas = [[0] * 12 for _ in range(3)]
+        self.departamentos = ["Ropa", "Deportes", "Jugueteria"]
+
+    def insertar_ventas(self, departamento, mes, venta):
+        if 0 <= departamento < len(self.departamentos) and 0 <= mes < 12:
+            self.ventas[departamento][mes] = venta
+        else:
+            print("Departamento o mes no válido")
+
+    def buscar_venta(self, departamento, mes):
+        if 0 <= departamento < len(self.departamentos) and 0 <= mes < 12:
+            return self.ventas[departamento][mes]
+        return -1 
+
+    def eliminar_ventas_departamento(self, departamento):
+        if 0 <= departamento < len(self.departamentos):
+            self.ventas[departamento] = [0] * 12  # Resetea las ventas a 0
+        else:
+            print("Departamento no válido")
+
+    def mostrar_ventas(self):
+        for i, departamento in enumerate(self.departamentos):
+            print(f"Ventas para {departamento}:")
+            for j, venta in enumerate(self.ventas[i]):
+                print(f"Mes {j + 1}: {venta:.2f}")
+            print()
+
+v = Ventas()
+v.insertar_ventas(0, 0, 5000)
+v.insertar_ventas(1, 1, 3000)
+v.mostrar_ventas()
+print("Venta en Ropa, Mes 1:", v.buscar_venta(0, 0))
+v.eliminar_ventas_departamento(0)
+v.mostrar_ventas() 
