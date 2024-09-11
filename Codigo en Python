@@ -17,7 +17,7 @@ class Ventas:
 
     def eliminar_ventas_departamento(self, departamento):
         if 0 <= departamento < len(self.departamentos):
-            self.ventas[departamento] = [0] * 12  # Resetea las ventas a 0
+            self.ventas[departamento] = [0] * 12
         else:
             print("Departamento no válido")
 
