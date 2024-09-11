@@ -1,1 +1,9 @@
-Lo que se hizo 
+codigo Java.
+En el static de ventas se muestra una matriz de 3 filas (una por cada departamento) y 12 columnas (una por cada mes del año) en donde se almacena las ventas de cada departamento por mes, en el static de departamentos es un arreglo de cadenas con los nombres de los departamentos y mientras que el sc es la instancia de la clase Scanner para leer la entrada del usuario desde la consola.
+Con el método principal ejecuta el programa llamando al método menu, que permite al usuario interactuar con el sistema antes de ejecutar las características antes mencionadas, con ello se muestran cuatro opciones en las que aparecerán: Insertar ventas en la matriz ventas, buscar y mostrar una venta específica, eliminar las ventas de un departamento y salir del programa.
+Con ello dependiendo de la opción seleccionada, llama a los métodos correspondientes, partiendo de ello, solicita al usuario que introduzca las ventas para cada departamento en cada mes del año, valida que las ventas sean números positivos y si el valor es válido, lo almacena en la matriz ventas.
+Este programa usa control de errores (manejo de excepciones) y validaciones para asegurar que las entradas sean correctas.
+Con ello para mencionar las características no tan conocidas para mí, el static es una palabra clave para poder definir al miembro de una clase, ya sea su atributo o su método, en el cual pertenece a la clase misma en sí, con esto creando una instancia, esto según entiendo es la que crea las características y propiedades del objeto en si.
+El try es se realiza para poder ejecutar una condición siendo que esta, aunque no sea válida, puede ejecutarse y que no tenga error, mientras que el catch es la que apoya a este mismo método, haciendo que esta no detenga al programa y pueda volver a ejecutarse para preguntar de nuevo la condición.
+
+Codigo Python
