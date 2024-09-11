@@ -1,4 +1,4 @@
-codigo Java.
+Codigo Java.
 En el static de ventas se muestra una matriz de 3 filas (una por cada departamento) y 12 columnas (una por cada mes del año) en donde se almacena las ventas de cada departamento por mes, en el static de departamentos es un arreglo de cadenas con los nombres de los departamentos y mientras que el sc es la instancia de la clase Scanner para leer la entrada del usuario desde la consola.
 Con el método principal ejecuta el programa llamando al método menu, que permite al usuario interactuar con el sistema antes de ejecutar las características antes mencionadas, con ello se muestran cuatro opciones en las que aparecerán: Insertar ventas en la matriz ventas, buscar y mostrar una venta específica, eliminar las ventas de un departamento y salir del programa.
 Con ello dependiendo de la opción seleccionada, llama a los métodos correspondientes, partiendo de ello, solicita al usuario que introduzca las ventas para cada departamento en cada mes del año, valida que las ventas sean números positivos y si el valor es válido, lo almacena en la matriz ventas.
@@ -7,3 +7,7 @@ Con ello para mencionar las características no tan conocidas para mí, el stati
 El try es se realiza para poder ejecutar una condición siendo que esta, aunque no sea válida, puede ejecutarse y que no tenga error, mientras que el catch es la que apoya a este mismo método, haciendo que esta no detenga al programa y pueda volver a ejecutarse para preguntar de nuevo la condición.
 
 Codigo Python
+El código en Python tiene inicializaciones como lo es el __init_(self)(Constructor) en la cual esta llama automáticamente a una instancia para proporcionar los atributos de una clase, siendo de esta manera 3 de ellas (ósea una por cada departamento).
+Lo que hace el return es devolver los valores considerados para que esta pueda verificar la información que esta recibiendo, si esta retorna -1 significaría que el valor dado no es correcto.
+De igual manera, gracia a la eliminación de la cuenta por meses, al poner el departamento correspondiente y en ese poner el numero 0, hace que todos los meses se pongan con ese mismo número según el departamento que corresponde.
+El método self sirve especialmente para poder guardar la instancia y la información propuesta para la utilización en otros métodos que se verían después, con el de igual manera el enumerate es una secuencia de bucle que permite iterar la información(Este es un preso de recorrer o repetir la información guardada con self), siendo que esta funciona mediante la búsqueda de los índices primero, seguido de la colocación de las columnas.
